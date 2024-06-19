@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flex flex-col text-white">
-      <div className="flex flex-col justify-between bg-[#002D9C]">
-        <div className="flex items-center justify-around border-b border-white">
+      <div className="flex flex-col bg-[#002D9C] px-10">
+        <div className="flex items-center justify-between border-b border-white">
           <div className="py-16">
             <h1 className="text-2xl font-semibold">Stay in the loop.</h1>
             <p className="text-md">
@@ -26,7 +26,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-between px-16">
+        <div className="flex justify-between">
           <div>
             <h2 className="text-xl font-bold">Company</h2>
             <ul className="space-y-2">
@@ -62,14 +62,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#103084] px-5 py-10">
+      <div className="bg-[#103084] px-10 py-10">
         <p className="text-sm font-semibold">
           <Link href={"#"}>OFFICE SPACE IN NEW YORK CITY</Link> {" / "}
           <Link href={"#"}>DOWNTOWN MANHATTAN</Link> {" / "}
           <Link href={"#"}>MIDTOWN MANHATTAN</Link> {" / "}
           <Link href={"#"}>BROOKLYN</Link>
         </p>
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-6 gap-4 text-sm mt-2">
           <p className="">Chelsea</p>
           <p className="">Financial District</p>
           <p className="">Flatiron District</p>
@@ -84,7 +84,42 @@ const Footer = () => {
           <p className="">Union Square</p>
         </div>
       </div>
-      <div className="bg-[#103084]"></div>
+      <div className="bg-[#103084] px-10 py-10">
+        <p className="text-sm font-semibold">
+          <Link href={"#"}>OFFICE SPACE IN SAN FRANCISCO BAY AREA</Link> {" / "}
+          <Link href={"#"}>SAN FRANCISCO</Link>
+        </p>
+        <div className="grid grid-cols-6 gap-4 text-sm mt-2">
+          <p className="">Chinatown</p>
+          <p className="">Financial District</p>
+          <p className="">Mission District</p>
+          <p className="">North Beach</p>
+          <p className="">SoMa</p>
+          <p className="">Union Square</p>
+        </div>
+      </div>
+      <div className="bg-[#103084] px-10 py-10">
+        <p className="text-sm font-semibold">
+          <Link href={"#"}>OFFICE SPACE IN LOS ANGELES</Link> 
+        </p>
+        <div className="grid grid-cols-6 gap-4 text-sm mt-2">
+          <p className="">Santa Monica</p>
+          <p className="">Brentwood</p>
+          <p className="">Mar Vista</p>
+          <p className="">Culver City</p>
+          <p className="">Beverly Hills</p>
+          <p className="">West Hollywood</p>
+          <p className="">EI Segundo</p>
+        </div>
+      </div>
+      <div className="bg-[#103084] px-10 py-8">
+        <h2 className="text-xl">&copy; 2024 Propreturns. All rights reserved.</h2>
+        <ul className="flex gap-2">
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
     </footer>
   );
 };
