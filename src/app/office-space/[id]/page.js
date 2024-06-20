@@ -11,6 +11,7 @@ import Location from "@/components/MyListing/Location";
 import Neighborhood from "@/components/MyListing/Neighborhood";
 import MeetJames from "@/components/MyListing/MeetJames";
 import Nearby from "@/components/MyListing/Nearby";
+import FloatingCard from "@/components/MyListing/FloatingCard";
 
 const MyListing = () => {
   const { id } = useParams();
@@ -31,8 +32,8 @@ const MyListing = () => {
               <Neighborhood />
               <MeetJames />
             </div>
-            <div className="lg:w-1/3 ">
-                My Card
+            <div className="lg:w-1/3 hidden lg:block">
+                <FloatingCard />
             </div>
           </div>
           <Nearby />
