@@ -3,8 +3,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col text-white hidden lg:block">
+    <footer className="lg:flex lg:flex-col text-white hidden">
       <div className="flex flex-col bg-[#002D9C] px-10">
+        <div className="">
         <div className="flex items-center justify-between border-b border-white">
           <div className="py-16">
             <h1 className="text-2xl font-semibold">Stay in the loop.</h1>
@@ -60,6 +61,7 @@ const Footer = () => {
           <div>
             Icons
           </div>
+        </div>
         </div>
       </div>
       <div className="bg-[#103084] px-10 py-10">
