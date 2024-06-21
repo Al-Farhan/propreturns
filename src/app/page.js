@@ -1,7 +1,6 @@
 "use client"
-import Header from "@/components/Header";
 import ListingCard from "@/components/ListingCard/ListingCard";
-import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import HomeLocation from "@/components/HomeLocation";
@@ -26,7 +25,9 @@ export default function Home() {
         <div className="flex-1 lg:w-1/3">
 
           {allListings?.data?.allListings?.map((listing) => (
+            <Link key={listing?._id} href={`/office-space/${listing?.slug}`}>
             <ListingCard listing={listing} />
+            </Link>
           ))}
         
         </div>

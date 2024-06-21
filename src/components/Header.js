@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import HeaderStrip from "./HeaderStrip";
 import Search from "./Search";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
       <header className="flex justify-between items-center px-8 pt-2 border-b lg:border-b-0 m-auto">
         <div className="flex items-center justify-center ">
           <div className="logo">
+            <Link href={"/"}>
             <Image width={150} height={150} src={"/logo.avif"} />
+            </Link>
           </div>
           <div className="search mt-2 ml-4 hidden lg:block">
             <Search />

@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const ImageSection = () => {
+const ImageSection = ({ images }) => {
   return (
     <div className="hidden lg:flex py-8 border-b px-4">
       <Carousel
@@ -16,12 +16,12 @@ const ImageSection = () => {
         className="w-full mx-4"
       >
         <CarouselContent className="justify-around">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {images?.map((image, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="">
                 <img
                   className="rounded-md"
-                  src="https://assets.codi.com/production/tr:w-600,h-400/qv9hg4u2njz73w14l2lu3pgux330"
+                  src={`${image}`}
                   alt=""
                 />
               </div>

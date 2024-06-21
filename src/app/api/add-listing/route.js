@@ -5,7 +5,7 @@ import { slugify } from "@/utils/slugify";
 export async function POST(request) {
   await dbConnect();
   try {
-    const { title, images, location, capacity, area, room, about, price } =
+    const { title, images, location, capacity, area, room, about, price, walk_score, transit_score, bike_score } =
      await request.json();
 
       console.log("title", title);
@@ -21,7 +21,10 @@ export async function POST(request) {
       !location ||
       !capacity ||
       !area ||
-      !about
+      !about ||
+      !walk_score ||
+      !transit_score ||
+      !bike_score
     ) {
       return Response.json(
         {
@@ -58,6 +61,9 @@ export async function POST(request) {
       room,
       about,
       price,
+      walk_score,
+      transit_score,
+      bike_score
     });
 
     await newListing.save();

@@ -35,6 +35,18 @@ const ListingSchema = new Schema({
   price: {
     type: Number
   },
+  walk_score: {
+    type: Number,
+    required: true
+  },
+  transit_score: {
+    type: Number,
+    required: true
+  },
+  bike_score: {
+    type: Number,
+    required: true
+  },
 });
 
 const Listing = mongoose.models.listings || mongoose.model("listings", ListingSchema);
