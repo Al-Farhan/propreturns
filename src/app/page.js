@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="px-5 min-h-screen">
       <div className="flex lg:flex-row w-full mt-3 px-5">
-        <div className="flex-1 lg:w-1/3">
+        <div className="flex-1 lg:w-1/2 xl:w-1/3">
 
           {allListings?.data?.allListings?.map((listing) => (
             <Link key={listing?._id} href={`/office-space/${listing?.slug}`}>
@@ -31,7 +31,7 @@ export default function Home() {
           ))}
         
         </div>
-        <div className="hidden lg:block lg:w-2/3">
+        <div className="hidden lg:block lg:w-1/2 xl:w-2/3">
           <HomeLocation />
         </div>
       </div>
