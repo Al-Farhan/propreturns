@@ -5,7 +5,7 @@ import { MdOutlineDoorFront } from "react-icons/md";
 
 const HeaderStrip = () => {
   return (
-    <div className="flex space-x-2 mb-2 mx-auto justify-between max-w-7xl items-center">
+    <div className="flex space-x-2 mb-2 mx-auto justify-between px-8 items-center">
         <div className="lg:flex hidden items-center space-x-2">
           <div>
             <button className="flex items-center space-x-2 border rounded-md py-2 px-4 hover:bg-gray-200  text-blue-600 font-semibold">

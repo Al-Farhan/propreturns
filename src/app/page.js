@@ -4,6 +4,7 @@ import ListingCard from "@/components/ListingCard/ListingCard";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import HomeLocation from "@/components/HomeLocation";
 
 export default function Home() {
 
@@ -22,14 +23,16 @@ export default function Home() {
   return (
     <main className="px-5 min-h-screen">
       <div className="flex lg:flex-row w-full mt-3 px-5">
-        <div className="flex-1 lg:w-1/2">
+        <div className="flex-1 lg:w-1/3">
 
           {allListings?.data?.allListings?.map((listing) => (
             <ListingCard listing={listing} />
           ))}
         
         </div>
-        <div className="hidden lg:block lg:w-1/2">Map</div>
+        <div className="hidden lg:block lg:w-2/3">
+          <HomeLocation />
+        </div>
       </div>
     </main>
   );

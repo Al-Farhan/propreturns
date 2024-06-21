@@ -3,8 +3,8 @@ import { ListingCarousel } from "./ListingCarousel";
 
 const ListingCard = ({ listing }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-4 border-b py-4">
-      <div className="flex-1 md:max-w-96">
+    <div className="flex flex-col lg:flex-row gap-4 border-b py-4">
+      <div className="">
         <ListingCarousel images={listing?.images} />
       </div>
       <div className="flex flex-col justify-around">
